@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+     $(document).ready(function(){
+        $(".arbol2").hide();
+        $(".flecha1").click(function(){
+            $(".arbol2").show();
+        });
+        $(".flecha2").click(function(){
+            $(".arbol2").hide();
+        });
+     });
+    
+</script>
+
+<style> 
+#caja{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6cm;
+}
+    img{
+      width: 100%;
+      height: auto;
+  }
+  .flecha1{
+      width: 200px;
+      height: auto;
+      transform: rotate(180deg);
+  }
+  .flecha2{
+      width: 200px;
+      height: auto;
+      
+  }
+  .arbol1{
+    width: 500px;
+    height: auto;
+  }
+  .arbol2{
+      position: absolute;
+      left: 32.5%;
+      top: 16%;
+      width: 600px;
+      height: auto;
+  }
+
+</style>
+</head>
+<body>
+    <div id="caja">
+    <div class="flecha1">
+        <img src="img/flecha.png" alt="">
+    </div>
+    <div class="arbol1">
+        <img src="img/arbol.jpg" alt="">
+    </div>
+    <img class="arbol2" src="img/arbol.jpg" alt="">
+    <div class="flecha2">
+        <img src="img/flecha.png" alt="">
+    </div>
+   </div>
+</body>
+</html>
